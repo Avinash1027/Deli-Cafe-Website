@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Form</title>
+  <link rel="stylesheet" href="chatform.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+ 
+  <nav class="navbar">
+            
+    <div class="logo">DELI &nbsp;<span class="highlight">CAFE</span></div>
+<ul class="nav-links">
+    <li><a href="http://127.0.0.1:3000/main.html">Home</a></li>
+    <li><a href="chatform.html">Reservations</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="#avii">Partners</a></li>
+    <li><a href="#about-us">About Us</a></li>
+    <li><a href="#Contactid">Contact Us</a></li>
+</ul>
+<a href="https://wa.me/919044799522
+"><button class="cta-button">WhatsApp</button></a>
+</nav> 
+
+  <div class="form-container">
+    <h1>Hall Reservation Form</h1>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="6bf98736-7f17-42a7-9a6d-eae95d9a63c2">
+        
+      <div class="step-indicators">
+        <label for="step-1">Personal <br>Information</label>
+        <label for="step-2">Reservation <br>Details</label>
+        <label for="step-3">Event <br> Details</label>
+        <label for="step-4">Additional <br> Details</label>
+      </div>
+      <input type="radio" name="step" id="step-1" checked >
+      <fieldset style="margin-left: 0%;padding-left: 20%;padding-top: 10%;" >
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required style="width: 300px;height: 30px;">
+        <br><br
+        <label for="contact">Contact Number:</label><br>
+        <input type="text" id="contact" name="contact" maxlength="10" pattern="\d{10}" required style="width: 300px;height: 30px;">
+        <br><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required style="width: 300px;height: 30px;"><br>
+        <label class="next-label" for="step-2">Next</label>
+      </fieldset>
+      
+      <input type="radio" name="step" id="step-2">
+      <fieldset style="margin-left: 0%;padding-left: 20%;padding-top: 10%;">
+        
+        <label for="date">Date of Reservation:</label><br>
+        <input type="date" id="date" name="date" required style="width: 300px;height: 30px;">
+        <br>
+        <label for="start-time">Start Time:</label><br>
+        <input type="time" id="start-time" name="start_time" required style="width: 300px;height: 30px;">
+        <br>
+        <label for="end-time">End Time:</label><br>
+        <input type="time" id="end-time" name="end_time" required style="width: 300px;height: 30px;">
+        <br>
+        <label for="guests">Number of Guests:</label><br>
+        <input type="number" id="guests" name="guests" min="1" required style="width: 300px;height: 30px;">
+        <br>
+        <label class="prev-label" for="step-1">Back</label>
+        <label class="next-label" for="step-3">Next</label>
+      </fieldset>
+      
+      <input type="radio" name="step" id="step-3">
+      <fieldset style="margin-left: 0%;padding-left: 20%; height: 290px;" id="three">
+       
+        <label for="event-type" style="height: 280px;">Type of Event:</label><br>
+        <select id="event-type" name="event_type" required style="width: 300px;height: 30px; margin-bottom: 10px;">
+          <option value="birthday">Birthday</option>
+          <option value="wedding">Wedding</option>
+          <option value="corporate">Corporate Meeting</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="special-requirements">Special Requirements:</label><br>
+        <textarea id="special-requirements" name="special_requirements" cols="38" rows="5" style="margin-bottom: 10px;"></textarea>
+        <br>
+        <label for="catering">Catering Preferences:</label><br>
+        <select id="catering" name="catering" style="width: 300px;height: 30px;margin-top: 10px;margin-bottom: 10px;">
+          <option value="vegetarian">Vegetarian</option>
+          <option value="non-vegetarian">Non-Vegetarian</option>
+          <option value="custom">Custom Menu</option>
+        </select><br>
+        <label class="prev-label" for="step-2">Back</label>
+        <label class="next-label" for="step-4">Next</label>
+      </fieldset>
+      
+      <input type="radio" name="step" id="step-4">
+      <fieldset style="margin-left: 0%;padding-left: 20%;padding-top: -3%;height: 280px;" id="four">
+       
+        <label style="margin: 10px;">
+          <input type="checkbox" name="decoration" value="yes"> Decoration Services
+        </label><br><br>
+        <label style="margin: 10px;">
+          <input type="checkbox" name="sound_lighting" value="yes"> Sound and Lighting Setup
+        </label><br><br>
+        <label style="margin: 10px;">
+          <input type="checkbox" name="parking" value="yes"> Parking Arrangements
+        </label><br><br>
+        <label style="margin: 10px;">
+            <input type="checkbox" name="parking" value="yes">Others <br> <textarea id="special-requirements" name="special_requirements" cols="38" rows="5" style="margin-left: 30px;" placeholder="Enter Your Other Requests"></textarea>
+          </label><br><div style="display: flex;;margin-left: 10%;">
+        <label class="prev-label" for="step-3" >Back</label>
+        <button type="submit" style="border: 1px solid white; border-radius: 20px;margin-left: 20px;">Submit Reservation</button></div>
+      </fieldset>
+    </div>
+      
+    </form>
+  </div>
+</body>
+</html>

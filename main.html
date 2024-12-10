@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Deli Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-container">
+    <header class="hero-section">
+        <nav class="navbar">
+            
+                <a href="http://127.0.0.1:3000/main.html"><div class="logo">DELI &nbsp;<span class="highlight">CAFE</span></div></a>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:3000/main.html">Home</a></li>
+                <li><a href="chatform.html">Reservations</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#avii">Partners</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#Contactid">Contact Us</a></li>
+            </ul>
+            <a href="https://wa.me/919044799522
+            "><button class="cta-button">WhatsApp</button></a>
+        </nav></header> 
+        </div>
+    <div class="content">
+      <h1>Welcome to <br> <span style="color:#ff9800 ;"> Brewing Ventures</span></h1>
+      <p>Experience the vibe of coffee, food, and comfort with us.</p>
+      <div style="display: flex;justify-content: space-between;">
+      <a href="https://www.swiggy.com/city/gorakhpur/brewing-venture-deoria-road-golghar-rest984913"><button>Order By Swiggy</button></a>
+      <a href="http://zoma.to/r/21503850" id="avii"><button>Order By Zomato</button></a>
+      <a href="menu.html"><button>Explore The Menu</button></a>
+    </div>
+    </div>
+    <div>
+        <h1 id="avi" class="content1">OUR DELIVERY <br><span style="color: #ff9800;">Partners</span></h1>
+        <img  class="zomato" src="Screenshot (150).png" alt="Zomato">
+        <img class="swiggy" src="images.png" alt="Swiggy">
+    </div>
+  <div>
+  <nav>
+    <h1 class="content1">Choose Your Combo <br><span style="color: #ff9800;">& Order Now</span></h1>
+    <ul class="menu-type">
+        <li><a href="http://127.0.0.1:3000/menu.html#Beverages"><button>
+            <img style="height: 150px;" src="logo.jpg" alt="">
+            <p>Beverages</p></button></a></li>
+        <li><a href="http://127.0.0.1:3000/menu.html#Fried"><button>
+            <img style="height: 150px;" src="logo1.png" alt="">
+            <p>Chinese</p></button></a></li>
+        <li><a href="http://127.0.0.1:3000/menu.html#Indian"><button>
+            <img style="height: 150px;" src="logo4.jpeg" alt="">
+            <p>Indian</p></button></a></li>
+        <li><a href="http://127.0.0.1:3000/menu.html#Pasta"><button>
+            <img style="height: 150px;" src="logo3.png" alt="">
+            <p>Western</p></button></a></li>
+    </ul>
+</nav>
+</div>
+
+<div class="about-us" id="about-us">
+    <main>
+        <section class="menu-section">
+            <img class="event-image" src="WhatsApp Image 2024-12-07 at 20.28.45_071968f3.jpg" alt="event">
+        </section>
+        <section class="menu-section"> 
+            <h1 class="event-text" style="margin-bottom: 50px;"><p style="color: white;font-size: xx-large;text-align: center;margin-left: -100px;"> Welcome to</p> Brewing Ventures</h1>
+            <p>Welcome to Deli Cafe, where every sip and bite is crafted to perfection! We specialize in serving a delectable range of beverages and fast foods that promise to satisfy every craving. Whether you’re in the mood for a refreshing drink, a steaming cup of coffee, or a quick snack, our cozy ambiance and delightful flavors make us the go-to spot for food lovers.
+
+                Drop in to relax, connect, and indulge in your favorite treats—because great food and beverages are best enjoyed with great company!</p>
+        </section>
+    </main>
+</div>
+
+
+<div class="about-us">
+    <main>
+        <section class="menu-section">
+            <img class="event-image" src="san-francisco-Bright-Open-Event-Space-SOMA-next-SFMOMA.jpg" alt="event">
+        </section>
+        <section class="menu-section"> 
+            <h1 class="event-text">Perfect for <br> Events, <br> Birthdays, and Kitty Parties!</h1>
+            <p>Brewing Ventures Making Your Celebrations Unforgettable!</p>
+        </section>
+    </main>
+</div>
+
+
+
+<section class="testimonial-section">
+    <h2 style="margin-left: 35%;">Reviews by our Customers</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <p>“I loved the variety on the menu!”</p>
+            <h4>- John Doe</h4>
+            
+        </div>
+        <div class="testimonial-card">
+            <p>“Service was quick, even during peak hours.”</p>
+            <h4>- Sarah Lee</h4>
+            
+        </div>
+        <div class="testimonial-card">
+            <p>“Loved the music and lighting—it set the perfect mood.”</p>
+            <h4>- Robert King</h4>
+            
+        </div>
+    </div>
+    <div class="testimonial-navigation" style="display: flex;justify-content: space-between;">
+        <button id="prevTestimonial" onclick="prevTestimonial()" >Prev</button>
+        <button id="nextTestimonial" onclick="nextTestimonial()">Next</button>
+    </div>
+</section>
+<script>
+    let currentTestimonialIndex = 0;
+    const testimonials = document.querySelectorAll('.testimonial-card');
+    const totalTestimonials = testimonials.length;
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.style.display = (i === index) ? 'block' : 'none';
+        });
+    }
+    function prevTestimonial() {
+        currentTestimonialIndex = (currentTestimonialIndex === 0) ? totalTestimonials - 1 : currentTestimonialIndex - 1;
+        showTestimonial(currentTestimonialIndex);
+    }
+    function nextTestimonial() {
+        currentTestimonialIndex = (currentTestimonialIndex === totalTestimonials - 1) ? 0 : currentTestimonialIndex + 1;
+        showTestimonial(currentTestimonialIndex);
+    }
+    showTestimonial(currentTestimonialIndex);
+</script>
+
+
+
+
+<div class="contact" id="Contactid">
+    <h1>Contact Details <br> <span style="font-size: xx-large;color: #ff9800;">For Deli Cafe</span></h1>
+    <div class="c">
+<div class="c1">
+<h2>Address</h2>
+<p>Brewing Venture, Ranidiha, <br> Gorakhpur - Deoria Rd, <br>Divya Nagar, <br>Mahadevapuram Colony,<br> Kunraghat, Gorakhpur,<br> Uttar Pradesh-273008</p></div>
+<div class="c2">
+<h2>Book a table</h2>
+<p >Separate Hall Available <br> For Birthday, Kitty Parties <br> & Get Together <br><br> +919044799522</p>
+</div>
+<div class="c3">
+<h2>Opening hours</h2>
+<p>Monday – Sunday <br>
+    06.30 AM – 11.00 PM</p>
+</div>
+<div class="c4">
+<h2>Our Delivery Partners</h2>
+<img src="901916-swiggy-vs-zomato.jpg" alt="">
+</div>
+</div>
+</div>
+</body>
+</html>

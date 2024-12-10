@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    background-image: url('clay-dishes-plate-top-view-free-space-your-text_187166-10574.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.form-container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    height: 500px;
+  }
+  .hero-section {
+    background-color: rgba(0, 0, 0, 0.316); /* Dark overlay for contrast */
+    color: white;
+    /* padding: 10px 0; */
+   width: 100%;
+    
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; */
+    list-style: none;
+    height: 60px;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.916);
+    width: 100%;
+    
+  } 
+  .nav-links a:hover{
+    border-bottom: 1px solid #ff9800;
+    padding-bottom: 15px;
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+  }
+  
+  .highlight {
+    color: #ff9800; /* Highlighted color for the name */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 440px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+  .nav-links li a:hover {
+    color: #ff9800;
+  }
+  
+  .cta-button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    /* cursor: pointer; */
+    margin-left: -25%;
+    margin-top: -20px;
+
+  }
+  
+  .cta-button:hover {
+    background: #e68900;
+  }
+.menu{
+    margin-top:10% ;
+    /* margin-left:0% ; */
+    text-align: center;
+    font-size: xx-large;
+}
+.menu nav{
+    margin-top: 10%;
+}
+.menu-type li a{
+    text-decoration: none;
+    color: white;
+    
+    }
+.menu-type li a:hover {
+       color: #e68900;
+    }
+.menu-type button {
+        background: #ff9800;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        padding-left: 40px;
+        padding-right: 40px;
+    
+      }
+.menu-type button:visited{
+        background-color: rgba(255, 152, 0, 0.3)
+      }
+.menu-type button:hover {
+        background: #e68900;
+      }
+nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+     /* Light gray navigation */
+        padding: 10px;
+    }
+.menu1{
+    text-align: center;
+    margin-top: 20%;
+    font-size:x-large;
+    
+}
+.heading1{
+color:#ff9800 ;
+font-size: xx-large;
+margin-left: 35%;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.content1 {
+    
+    margin-left: 30%;
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+   
+    font-size: 50px;
+  }
+  .menu-type button {
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    padding-left: 140px;
+    padding-right: 110px;
+
+
+  }
+  .menu-type button:visited{
+    background-color: rgba(255, 152, 0, 0.3)
+  }
+  .menu-type button:hover {
+    background: #e68900;
+  }
+.menu-section {
+    padding: 20px;
+    padding: 20px;
+    width: 70%;
+}
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-section li {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.menu-section span {
+    margin-left: 30%;
+    background-color: #ff9800;
+    padding: 4px;
+    float: right;
+    margin: 1px;
+    border: 1px solid #ff9800;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.menu-section span a{
+    text-decoration: none;
+    color: white;
+}
+.menu-section span:hover{
+    background-color: #e68900;
+}
+
+.menu-type li a{
+text-decoration: none;
+color: white;
+
+}
+.menu-type li a:hover {
+   color: #e68900;
+}

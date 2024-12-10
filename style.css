@@ -1,0 +1,363 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    color: white;
+    background-image: url('clay-dishes-plate-top-view-free-space-your-text_187166-10574.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* filter: blur(8px); */
+    /* position: relative; */
+    height: 100vh;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* Full-Screen Background */
+  background-container{
+    display: block;
+}
+
+  
+  /* Hero Section Styling */
+  .hero-section {
+    background-color: rgba(0, 0, 0, 0.316); /* Dark overlay for contrast */
+    color: white;
+    /* padding: 10px 0; */
+   width: 100%;
+    
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; */
+    list-style: none;
+    height: 60px;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.916);
+    width: 100%;
+    
+  } 
+  .nav-links a:hover{
+    border-bottom: 1px solid #ff9800;
+    padding-bottom: 15px;
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+  }
+  
+  .highlight {
+    color: #ff9800; /* Highlighted color for the name */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 440px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+  .nav-links li a:hover {
+    color: #ff9800;
+  }
+  
+  .cta-button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    /* cursor: pointer; */
+    margin-left: -25%;
+    margin-top: -20px;
+
+  }
+  
+  .cta-button:hover {
+    background: #e68900;
+  }
+  
+  /* Content Styling */
+  .content {
+    
+    margin-left: 30%;
+    margin-top: 13%;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    padding: 10px;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .content button {
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .content button:hover {
+    background: #e68900;
+  }
+.content a:hover{
+  transform: scale(1.1);
+}
+
+  /* Main Pheiage menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+ /* Light gray navigation */
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.content1 {
+    
+    margin-left: 30%;
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 50px;
+  }
+  .menu-type button {
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    padding-left: 40px;
+    padding-right: 40px;
+
+  }
+  .menu-type button:visited{
+    background-color: rgba(255, 152, 0, 0.3)
+  }
+  .menu-type button:hover {
+    background: #e68900;
+    transform: scale(1.2);
+  }
+.menu-section {
+    padding: 20px;
+    padding: 20px;
+    width: 40%;
+}
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-section li {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.menu-section span {
+    margin-left: 30%;
+    background-color: #ff9800;
+    padding: 4px;
+    float: right;
+    margin: 1px;
+    border: 1px solid #ff9800;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.menu-section span a{
+    text-decoration: none;
+    color: white;
+}
+.menu-section span:hover{
+    background-color: #e68900;
+    
+}
+
+.menu-type li a{
+text-decoration: none;
+color: white;
+
+}
+.menu-type li a:hover {
+   color: #e68900;
+   transform: scale(1.2);
+}
+.zomato{
+    margin-left: 20%;
+    height: 80px;
+}
+.swiggy{
+    margin-left: 30%;
+    height: 80px;
+}
+.event-text{
+  font-size: 4rem;
+  color: #ff9800;
+}
+.event-image{
+  height: 500px;
+  width: 120%;
+}
+.about-us{
+   margin-top: 10%;
+}
+.contact{
+ 
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 10px;
+    
+
+}
+.contact h1{
+    margin-bottom:7%;
+}
+.c{
+  display: flex;
+  justify-content: space-between;
+    list-style: none;
+    gap: 25px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+   margin-left: 5%;
+}
+.c p{
+  margin-bottom: 19%;
+  color: gray;
+}
+.c1 p{
+font-size: 1rem;
+}
+.c h2{
+  color: #ff9800;
+}
+.c4 img{
+  margin-top: 30px;
+  height: 80px;
+}
+.testimonial-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  background: rgba(0,0,0,0.1);
+  padding: 50px 20px;
+  border-radius: 15px;
+  margin: 20px;
+  color: #fff;
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #f5a623;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color:white;
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.testimonial-card p:last-child {
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+}
+
+.testimonial-navigation {
+  margin-top: 40px;
+}
+
+.testimonial-navigation button {
+  padding: 10px 20px;
+  background-color: #f5a623;
+  border: none;
+  color:white;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0 10px;
+}
+
+.testimonial-navigation button:hover {
+  background-color: #d67f0c;
+  transform: translateY(-5px);
+}
+
