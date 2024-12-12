@@ -361,5 +361,5 @@ font-size: 1rem;
   transform: translateY(-5px);
 }
 .partners a:hover{
-  transform: scale(1.2);
+  transform: scale(2);
 }
