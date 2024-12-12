@@ -1,29 +1,23 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    color: white;
-    background-image: url('clay-dishes-plate-top-view-free-space-your-text_187166-10574.png');
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url("clay-dishes-plate-top-view-free-space-your-text_187166-10574.png");
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center;
+    /* background-position: center; */
     background-attachment: fixed;
-    position: relative;
-    height: 100vh;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
-.form-container {
-    background: white;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 90%;
-    height: 500px;
-  }
-  .hero-section {
+
+/* Header Styling */
+.hero-section {
     background-color: rgba(0, 0, 0, 0.316); /* Dark overlay for contrast */
     color: white;
     /* padding: 10px 0; */
@@ -96,133 +90,63 @@ body{
   .cta-button:hover {
     background: #e68900;
   }
-.menu{
-    margin-top:10% ;
-    /* margin-left:0% ; */
+/* Menu Section */
+.menu {
     text-align: center;
-    font-size: xx-large;
+    padding: 50px 20px;
 }
-.menu nav{
-    margin-top: 10%;
-}
-.menu-type li a{
-    text-decoration: none;
+
+.menu h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
     color: white;
-    
-    }
-.menu-type li a:hover {
-       color: #e68900;
-    }
-.menu-type button {
-        background: #ff9800;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 1.8rem;
-        padding-left: 40px;
-        padding-right: 40px;
-    
-      }
-.menu-type button:visited{
-        background-color: rgba(255, 152, 0, 0.3)
-      }
-.menu-type button:hover {
-        background: #e68900;
-      }
-nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-     /* Light gray navigation */
-        padding: 10px;
-    }
-.menu1{
-    text-align: center;
-    margin-top: 20%;
-    font-size:x-large;
-    
 }
-.heading1{
-color:#ff9800 ;
-font-size: xx-large;
-margin-left: 35%;
+
+.menu .highlight {
+    color: #ff9800;
 }
-main {
-    display: flex;
-    justify-content: space-around;
+
+.menu-category {
+    background: white;
+    border-radius: 8px;
+    margin: 20px auto;
     padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.content1 {
-    
-    margin-left: 30%;
-    margin-top: 5%;
-    text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-   
-    font-size: 50px;
-  }
-  .menu-type button {
-    background: #ff9800;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+
+.menu-category h2 {
     font-size: 1.8rem;
-    padding-left: 140px;
-    padding-right: 110px;
-
-
-  }
-  .menu-type button:visited{
-    background-color: rgba(255, 152, 0, 0.3)
-  }
-  .menu-type button:hover {
-    background: #e68900;
-  }
-.menu-section {
-    padding: 20px;
-    padding: 20px;
-    width: 70%;
-}
-.menu-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-section li {
+    color: #ff9800;
     margin-bottom: 15px;
-    color: white;
+    border-bottom: 2px solid #ff9800;
+    display: inline-block;
 }
 
-.menu-section span {
-    margin-left: 30%;
+.menu-category ul {
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-category li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1rem;
+}
+
+.menu-category li:hover {
+    background-color: #f8f9fa;
+}
+
+.price {
     background-color: #ff9800;
-    padding: 4px;
-    float: right;
-    margin: 1px;
-    border: 1px solid #ff9800;
-    border-radius: 10px;
-    text-decoration: none;
-}
-.menu-section span a{
-    text-decoration: none;
     color: white;
-}
-.menu-section span:hover{
-    background-color: #e68900;
-}
-
-.menu-type li a{
-text-decoration: none;
-color: white;
-
-}
-.menu-type li a:hover {
-   color: #e68900;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }

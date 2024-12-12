@@ -360,4 +360,6 @@ font-size: 1rem;
   background-color: #d67f0c;
   transform: translateY(-5px);
 }
-
+.partners a:hover{
+  transform: scale(1.2);
+}
