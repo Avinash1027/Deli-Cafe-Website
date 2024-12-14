@@ -33,20 +33,20 @@
   }
   
   /* Navbar */
-  .navbar {
+  /* .navbar {
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 20px; */
+    
     list-style: none;
     height: 60px;
     margin-top: 0px;
     background-color: rgba(0, 0, 0, 0.916);
     width: 100%;
     
-  } 
+  }  */
   .nav-links a:hover{
     border-bottom: 1px solid #ff9800;
     padding-bottom: 15px;
@@ -86,17 +86,36 @@
     color: white;
     border: none;
     padding: 8px 15px;
-    font-size: 0.9rem;
+    font-size: 1rem; /* Adjust font size */
     border-radius: 4px;
-    /* cursor: pointer; */
-    margin-left: -25%;
-    margin-top: -20px;
-
+    margin: 0; /* Reset margin */
+    position: relative;
+    z-index: 10; /* Ensure it doesn't overshadow other elements */
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
   .cta-button:hover {
     background: #e68900;
+    transform: scale(1.1); /* Add slight hover effect */
   }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.916);
+    height: 60px;
+    width: 100%;
+    padding: 0 20px; /* Add padding for spacing */
+  }
+  
+  @media (max-width: 768px) {
+    .cta-button {
+      padding: 5px 10px; /* Adjust padding for smaller screens */
+      font-size: 0.9rem; /* Reduce font size */
+    }
+  }
+  
   
   /* Content Styling */
   .content {
