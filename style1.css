@@ -1,0 +1,134 @@
+/* Responsive Design */
+
+@media screen and (max-width: 1200px) {
+    .nav-links {
+      margin-left: auto;
+      gap: 15px;
+    }
+  
+    .content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .content p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  
+    .menu-type button {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      margin-left: 0;
+      gap: 10px;
+    }
+  
+    .content {
+      margin-left: 10%;
+      margin-top: 15%;
+    }
+  
+    .menu-section {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .event-text {
+      font-size: 3rem;
+    }
+  
+    .c {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .testimonial-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  
+    .menu-type li {
+      display: block;
+      text-align: center;
+    }
+  
+    .content h1 {
+      font-size: 2rem;
+    }
+  
+    .content {
+      margin-left: 5%;
+      margin-top: 20%;
+    }
+  
+    .menu-section ul {
+      text-align: center;
+    }
+  
+    .partnerss img {
+      height: 50px;
+    }
+  
+    .testimonial-card p {
+      font-size: 0.9rem;
+    }
+  
+    .testimonial-card h4 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .cta-button {
+      padding: 5px 10px;
+      font-size: 0.7rem;
+    }
+  
+    .content {
+      margin-top: 25%;
+    }
+  
+    .menu-type button {
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+  
+    .menu-section {
+      text-align: center;
+    }
+  
+    .event-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .testimonial-card p {
+      font-size: 0.8rem;
+    }
+  }
+  
