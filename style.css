@@ -382,3 +382,18 @@ font-size: 1rem;
 .partners a:hover{
   transform: scale(2);
 }
+@media (max-width: 768px) {
+  .destination {
+      width: calc(45% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .destination {
+      width: calc(100% - 20px);
+  }
+
+  .destination img {
+      height: 150px;
+  }
+}
