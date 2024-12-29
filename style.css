@@ -17,104 +17,73 @@
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
   }
-  /* Full-Screen Background */
-  background-container{
-    display: block;
-}
 
-  
-  /* Hero Section Styling */
+
   .hero-section {
     background-color: rgba(0, 0, 0, 0.316); /* Dark overlay for contrast */
     color: white;
-    /* padding: 10px 0; */
    width: 100%;
-    
+   display: grid;
+   grid-template-columns: repeat(2,fr);
+   /* gap: 15px; */
   }
+.navbar {
+  /* display: flex;
+  justify-content: space-between; */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.916);
+  height: 60px;
+  width: 100%;
+  /* padding: 0 20px; */
   
-  /* Navbar */
-  /* .navbar {
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    list-style: none;
-    height: 60px;
-    margin-top: 0px;
-    background-color: rgba(0, 0, 0, 0.916);
-    width: 100%;
-    
-  }  */
-  .nav-links a:hover{
-    border-bottom: 1px solid #ff9800;
-    padding-bottom: 15px;
-  }
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
-    margin-left: 20px;
-  }
-  
-  .highlight {
-    color: #ff9800; /* Highlighted color for the name */
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 440px;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    
-  }
-  
-  .nav-links li a:hover {
-    color: #ff9800;
-  }
-  
-  .cta-button {
-    background: #ff9800;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    font-size: 1rem; /* Adjust font size */
-    border-radius: 4px;
-    margin: 0; /* Reset margin */
-    position: relative;
-    z-index: 10; /* Ensure it doesn't overshadow other elements */
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background: #e68900;
-    transform: scale(1.1); /* Add slight hover effect */
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.916);
-    height: 60px;
-    width: 100%;
-    padding: 0 20px; /* Add padding for spacing */
-  }
-  
-  @media (max-width: 768px) {
-    .cta-button {
-      padding: 5px 10px; /* Adjust padding for smaller screens */
-      font-size: 0.9rem; /* Reduce font size */
-    }
-  }
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 25px;
+  font-size: 20px;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #ff9800;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.highlight {
+  color: #ff9800;
+}
+
+.cta-button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 4px;
+  /* margin-left: 20px; */
+/* margin-top: -15px; */
+}
+
+.cta-button:hover {
+  background: #e68900;
+  transform: scale(1.1);
+}
+
   
   
   /* Content Styling */
@@ -176,8 +145,8 @@ nav a {
     text-decoration: none;
 }
 main {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
     padding: 20px;
 }
 .content1 {
@@ -200,7 +169,6 @@ main {
     font-size: 1.8rem;
     padding-left: 40px;
     padding-right: 40px;
-
   }
   .menu-type button:visited{
     background-color: rgba(255, 152, 0, 0.3)
@@ -244,6 +212,13 @@ main {
     
 }
 
+.aviki{
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  margin-left: -100px;
+}
+
 .menu-type li a{
 text-decoration: none;
 color: white;
@@ -273,15 +248,12 @@ color: white;
    margin-top: 10%;
 }
 .contact{
- 
     background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
     width: 100%;
     padding: 10px;
-    
-
 }
 .contact h1{
     margin-bottom:7%;
@@ -381,19 +353,4 @@ font-size: 1rem;
 }
 .partners a:hover{
   transform: scale(2);
-}
-@media (max-width: 768px) {
-  .destination {
-      width: calc(45% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .destination {
-      width: calc(100% - 20px);
-  }
-
-  .destination img {
-      height: 150px;
-  }
 }
