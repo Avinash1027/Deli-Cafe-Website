@@ -1,84 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css">
-    <title>Deli Cafe - Menu</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logooo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="menu.css"/>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&family=Bebas+Neue&family=Chicle&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rubik+Vinyl&family=Yuji+Mai&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+      integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Menu-Deli Cafe</title>
+  </head>
+  <body>
+   
     <div class="background-container">
         <header class="hero-section">
-            <nav class="navbar">
-                
-                    <a href="index.html"><div class="logo">DELI &nbsp;<span class="highlight">CAFE</span></div></a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="chatform.html">Reservations</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="index.html#avii">Partners</a></li>
-                    <li><a href="index.html#about-us">About Us</a></li>
-                    <li><a href="index.html#Contactid">Contact Us</a></li>
-                </ul>
-                <a href="https://wa.me/919044799522
-                "><button class="cta-button">WhatsApp</button></a>
-            </nav></header> 
-            </div>
-
-    <section class="menu">
-        <h1>Explore Our <span class="highlight">Delicious Menu</span></h1>
-        <div class="menu-category" id="beverages">
-            <h2>Beverages</h2>
-            <ul>
+          <nav class="navbar">
+            <a href="index.html" style="text-decoration: none" class="logo">
+              <div>DELI &nbsp;<span class="highlight">CAFE</span></div>
+            </a>
+            <ul class="nav-links">
+              <li><a href="http://127.0.0.1:3000/index.html">Home</a></li>
+              <li>
+                <a href="http://127.0.0.1:3000/chatform.html">Reservations</a>
+              </li>
+              <li><a href="http://127.0.0.1:3000/menu.html">Menu</a></li>
+              <li>
+                <a href="http://127.0.0.1:3000/index.html#partner">Partners</a>
+              </li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#Contactid">Contact Us</a></li>
+              <li class="cta-buttonn">
+                <a href="https://wa.me/919044799522">
+                  <button class="cta-button">WhatsApp</button>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+    </div>
+        <div class="menu">
+          <div class="bev">
+            
+              <img src="GettyImages-1169562205.jpg" alt="" />
+           
+            <div class="bev-des">
+                <h2>BEVERAGES</h2>
+              <ul>
                 <li>Tea <span class="price">₹15</span></li>
                 <li>Masala Tea <span class="price">₹20</span></li>
                 <li>Coffee <span class="price">₹30</span></li>
                 <li>Cappuccino <span class="price">₹25</span></li>
                 <li>Cold Coffee <span class="price">₹40</span></li>
-                <li>Cold Coffee with Ice Cream <span class="price">₹50</span></li>
-                <li id="chinese">Soft Drinks <span class="price">₹MRP</span></li>
-            </ul>
+                
+                <li id="chinese">
+                  Soft Drinks <span class="price">₹MRP</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <div class="menu-category" >
-            <h2>Fried Rice & Noodles</h2>
-            <ul>
-                <li>Veggie Fried Rice <span class="price">₹69</span></li>
-                <li>Schezwan Fried Rice <span class="price">₹79</span></li>
-                <li>Paneer Fried Rice <span class="price">₹99</span></li>
-                <li>Noodles <span class="price">₹50</span></li>
-                <li>Singapore Noodles <span class="price">₹80</span></li>
-                <li>Schezwan Noodles <span class="price">₹90</span></li>
-                <li>Steamed Momos <span class="price">₹30</span></li>
-                <li>Fried Momos <span class="price">₹40</span></li>
-                <li>Kurkure Momos <span class="price">₹50</span></li>
-                <li id="pasta">Tandoori Momos <span class="price">₹65</span></li>
-            </ul>
-        </div>
-
-        <div class="menu-category" >
-            <h2>Pasta & Fries</h2>
-            <ul>
-                <li>Red Sauce Pasta <span class="price">₹65</span></li>
-                <li>White Sauce Pasta <span class="price">₹70</span></li>
-                <li>Peri Peri Pasta <span class="price">₹80</span></li>
-                <li>Potato Fries <span class="price">₹45</span></li>
-                <li>Peri Peri Fries <span class="price">₹55</span></li>
-                <li>Chili Potato <span class="price">₹70</span></li>
-            </ul>
-        </div>
-
-        <div class="menu-category" id="indian">
-            <h2>Indian</h2>
-            <ul>
-                <li>Samosa <span class="price">₹15</span></li>
-                <li>Pizza Samosa <span class="price">₹20</span></li>
-                <li>Cheese Chaat <span class="price">₹30</span></li>
-                <li>Samosa Chaat <span class="price">₹30</span></li>
-                <li>Kachori <span class="price">₹25</span></li>
-                <li>Chole Bhature <span class="price">₹40</span></li>
-            </ul>
-        </div>
-    </section>
-</body>
+      
+    
+  </body>
 </html>

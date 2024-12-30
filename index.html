@@ -7,12 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
     <link rel="icon" href="logooo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css"/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rubik+Vinyl&family=Yuji+Mai&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>Deli Cafe</title>
   </head>
   <body>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  
         <div class="background-container">
-          <!-- Navbar inside the carousel container -->
+          
           <header class="hero-section">
             <nav class="navbar">
               <a href="index.html" style="text-decoration: none;" class="logo">
@@ -23,10 +32,10 @@
               <ul class="nav-links">
                 
                 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="chatform.html">Reservations</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="#avii">Partners</a></li>
+                <li><a href="http://127.0.0.1:3000/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:3000/chatform.html">Reservations</a></li>
+                <li><a href="http://127.0.0.1:3000/menu.html">Menu</a></li>
+                <li><a href="http://127.0.0.1:3000/index.html#partner">Partners</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#Contactid">Contact Us</a></li>
                 <li class="cta-buttonn">
@@ -37,15 +46,15 @@
               </ul>
             </nav>
           </header>
-      
-          <!-- Carousel Items -->
+      </div>
+          
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="Burger-with-fries.png" class="d-block w-100" alt="..." height="900px">
               <div class="content">
                 <div class="co-head">
                   <h1>
-                    Welcome to &nbsp;<br /><span>
+                      Welcome to <br /><span>
                       Brewing Ventures</span
                     >
                   </h1>
@@ -85,7 +94,7 @@
               <img src="WhatsApp Image 2024-12-07 at 20.28.45_071968f3.jpg" class="d-block w-100" alt="..." height="900px">
               <div class="content">
                 <div class="co-head">
-                  <h1>
+                  <h1 style="font-weight: 900;">
                     Host Your Events,Birthdays<br /><span>With Elegance and Ease</span>
                   </h1>
                   <p>
@@ -172,6 +181,7 @@
             high-quality ingredients and a touch of love.
             <br /><br />
 <!-- 
+
             At Deli Cafe, we believe in creating not just meals but memories.
             Whether you're stopping by for a quick snack, meeting friends for a
             casual hangout, or finding a quiet spot to work, our cafe is the
@@ -267,7 +277,7 @@
       }
       showTestimonial(currentTestimonialIndex);
     </script>
-    <div class="partners">
+    <div class="partners" id="partner">
       <div class="pa-head">
         <h1 id="avi" class="par-head">
           OUR DELIVERY<br /><span>Partners</span>
@@ -283,7 +293,7 @@
           <h2>Address</h2>
           <p>
             Brewing Venture, Ranidiha, <br />
-            Gorakhpur - Deoria Rd, <br />Divya Nagar, <br />Mahadevapuram
+            Gorakhpur - Deoria Rd, <br />Divya Nagar Colony, <br />Mahadevapuram
             Colony,<br />
             Kunraghat, Gorakhpur,<br/>
             Uttar Pradesh-273010
