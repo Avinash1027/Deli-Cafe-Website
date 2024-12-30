@@ -80,18 +80,20 @@ color: #ffd700;
 margin-top: -0.8%;
 }
 .cta-button {
-background: #ffd700;
-color: white;
-border: none;
+background: rgba(0, 0, 0, 0);
+color: #ffd800;
+border: 1px solid #ffd700;
 padding: 8px 15px;
 font-size: 1rem;
 border-radius: 4px;
-
+font-weight: 700;
 }
 
 .cta-button:hover {
-background: #e68900;
+background: #ffd700;
+color: rgba(0, 0, 0, 0.571);
 transform: scale(1.1);
+
 }
 .carousel-item {
 position: relative;
